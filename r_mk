@@ -1,0 +1,10 @@
+# get the data
+
+curl -X GET https://datascientest-mlops.s3.eu-west-1.amazonaws.com/mlops_dvc_fr/raw.csv -o raw.csv
+pip install "dvc[s3]"
+
+
+
+# reqirements create
+pip freeze > requirements.txt  
+("dvc[s3]" makes it big)
